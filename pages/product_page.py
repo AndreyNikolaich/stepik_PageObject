@@ -7,7 +7,7 @@ class ProductPage (BasePage):
     def add_to_basket(self):
         link = self.browser.find_element(*AddToBasketLocators.ADD_TO_BASKET)
         link.click()
-        self.solve_quiz_and_get_code()
+        #self.solve_quiz_and_get_code()
         return ProductPage(browser=self.browser, url=self.browser.current_url)
 
     def should_text_book(self):
